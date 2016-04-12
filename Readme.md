@@ -1,7 +1,7 @@
 # Личный проект «Нёрдс»
 
 * Студент: [Неопознанный енот](https://up.htmlacademy.ru/htmlcss/13/user/178276).
-* Наставник: `Юлия Антонова`https://htmlacademy.ru/profile/id39082.
+* Наставник: `Юлия Антонова`Джулия https://htmlacademy.ru/profile/id39082.
 
 ---
 
