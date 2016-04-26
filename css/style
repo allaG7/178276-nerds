@@ -1,0 +1,31 @@
+body{   
+    font-family:"Myriad Pro Regular", 
+    font-size:16 px;
+    color: #283136;
+    line-height:22 px;
+    font-weight:normal;
+}
+
+h1{
+ 		font-family: Myriad Pro Regular
+    font-size:40px;
+    font-weight:normal;
+    line-height:120%;
+    color: #000000;
+}
+
+h2{
+ 	  font-family: Myriad Pro Regular
+    font-size:36px;
+    font-weight:normal;
+    line-height:36 px;
+    color: #000000;
+}
+
+h3{
+ 	  font-family: Myriad Pro Regular
+    font-size:18px;
+    font-weight:normal;
+    line-height:30 px;
+    color: #000000;
+}
