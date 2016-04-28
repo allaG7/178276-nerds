@@ -6,7 +6,6 @@ body {
   padding: 0;
 }
 
-
 }
 .clearfix::after {
   content: "";
@@ -22,12 +21,12 @@ body {
   padding: 0 10px;
   outline:2px solid red;
  
-
 }
 
 .index-logo {
   float: left;
    width: 150px;
+   margin-right: 20px;
 
   /* Только для оформления сетки */
   min-height: 83px;
