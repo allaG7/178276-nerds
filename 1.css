@@ -1,0 +1,54 @@
+html,
+body {
+  min-width: 1200px;
+  min-height: 2256px;
+  margin: 0;
+  padding: 0;
+}
+
+
+}
+.clearfix::after {
+  content: "";
+
+  display: table;
+  clear: both;
+  
+}
+
+.container {
+  width: 880px;
+  margin: 0 auto;
+  padding: 0 10px;
+  outline:2px solid red;
+ 
+
+}
+
+.index-logo {
+  float: left;
+   width: 150px;
+
+  /* Только для оформления сетки */
+  min-height: 83px;
+  outline:2px solid yellow;
+}
+
+.main-navigation {
+  float: none;
+  width: 420px;
+  margin: 0 auto;
+
+  /* Только для оформления сетки */
+  min-height: 83px;
+  outline:2px solid yellow;
+}
+
+.buyer-block {
+    float: right;
+   width: 100px;
+
+  /* Только для оформления сетки */
+  min-height: 83px;
+  outline:2px solid yellow;
+}
