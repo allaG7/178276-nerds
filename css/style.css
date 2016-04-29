@@ -24,7 +24,6 @@ body {
 
 .clearfix::after {
   content: "";
-
   display: table;
   clear: both;  
 }
@@ -38,8 +37,7 @@ body {
 
 .index-logo {
   float: left;
-  width: 150px;
-  
+  width: 150px;  
   /* Только для оформления сетки */
   min-height: 83px;
   outline:2px solid yellow;
@@ -47,8 +45,7 @@ body {
 
 .main-navigation {
   float: left;
-  width: 420px;
-  
+  width: 420px;  
   /* Только для оформления сетки */
   min-height: 83px;
   outline:2px solid yellow;
@@ -57,7 +54,6 @@ body {
 .buyer-block {
   float: right;
   width: 100px;
-
   /* Только для оформления сетки */
   min-height: 83px;
   outline:2px solid yellow;
