@@ -7,12 +7,12 @@ body {
   padding: 0;
 }
 
-body{   
-    font-family:"Roboto"; 
-    font-size:16px;
-    color: #283136;
-    line-height:22px;
-    font-weight:normal;
+body {   
+  font-family:"Roboto"; 
+  font-size:16px;
+  color: #283136;
+  line-height:22px;
+  font-weight:normal;
 }
 
 .main-header {
@@ -21,13 +21,12 @@ body{
   outline:2px solid green;
 }
 
-}
+
 .clearfix::after {
   content: "";
 
   display: table;
-  clear: both;
-  
+  clear: both;  
 }
 
 .container {
@@ -35,8 +34,6 @@ body{
   margin: 0 auto;
   padding: 0 10px;
   outline:2px solid red;
- 
-
 }
 
 .index-logo {
@@ -51,7 +48,6 @@ body{
 .main-navigation {
   float: left;
   width: 420px;
-
   
   /* Только для оформления сетки */
   min-height: 83px;
@@ -59,36 +55,35 @@ body{
 }
 
 .buyer-block {
-    float: right;
-   width: 100px;
+  float: right;
+  width: 100px;
 
   /* Только для оформления сетки */
   min-height: 83px;
   outline:2px solid yellow;
 }
 
-
-h1{
-    font-family:"Roboto";
-    font-size:40px;
-    font-weight:normal;
-    line-height:120%;
-    color: #000000;
+h1 {
+  font-family:"Roboto";
+  font-size:40px;
+  font-weight:normal;
+  line-height:120%;
+  color: #000000;
 }
 
-h2{
-    font-family:"Roboto";
-    font-size:36px;
-    font-weight:normal;
-    line-height:40px;
-    color: #000000;
+h2 {
+  font-family:"Roboto";
+  font-size:36px;
+  font-weight:normal;
+  line-height:40px;
+  color: #000000;
 }
 
-h3{
-    font-family: "Roboto";
-    font-size:18px;
-    font-weight:normal;
-    line-height:30px;
-    color: #000000;
+h3 {
+  font-family: "Roboto";
+  font-size:18px;
+  font-weight:normal;
+  line-height:30px;
+  color: #000000;
 }
 
