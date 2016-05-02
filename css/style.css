@@ -15,17 +15,23 @@ body {
   font-weight:normal;
 }
 
-.main-header {
+.main-header { 
   /* Только для оформления сетки */
-  min-height: 83px;
   outline:2px solid green;
 }
-
 
 .clearfix::after {
   content: "";
   display: table;
   clear: both;  
+}
+
+.main-slogan .container {
+  width: 651px;
+  margin-top: 73px;
+  margin-bottom: 93px;
+  /* Только для оформления сетки */
+  min-height: 80px;
 }
 
 .container {
@@ -35,9 +41,72 @@ body {
   outline:2px solid red;
 }
 
+.filters-column {
+  float: left;
+  width: 240px;
+  margin-right: 40px;
+  /* Только для оформления сетки */
+  min-height: 727px; 
+  outline:2px solid yellow; 
+}
+
+.items-column {
+  float: right;
+  width: 560px;
+  /* Только для оформления сетки */
+  min-height: 1125px;
+  outline:2px solid yellow;
+}
+
+.items {
+  width: 560px;
+  font-size: 0;
+  outline:2px solid yellow;  
+}
+
+.item {
+  display: inline-block;
+  font-size: 16px;
+  margin-top: 30px;
+  margin-right: 80px; 
+  margin-bottom: 80px; 
+  width: 240px;
+  /* Только для оформления сетки */
+  min-height: 270px;
+}
+
+.item:nth-child(even) {
+  margin-right:0;
+}
+
+.item-info {
+  position: absolute;
+  width: 200px;
+  margin-right: 20px;
+  margin-left: 20px;
+  margin-bottom: 14px;
+  /* Только для оформления сетки */
+  min-height: 200px; 
+}
+
+.pagination {
+  width: 285px;
+  /* Только для оформления сетки */
+  min-height: 39px; 
+  outline:2px solid yellow;
+}
+
+.final-filter {
+  width: 560px;
+  /* Только для оформления сетки */
+  min-height: 16px;
+  outline:2px solid yellow;
+}
+
 .index-logo {
   float: left;
-  width: 150px;  
+  width: 140px;  
+  margin-top: 27px;
   /* Только для оформления сетки */
   min-height: 83px;
   outline:2px solid yellow;
@@ -45,7 +114,8 @@ body {
 
 .main-navigation {
   float: left;
-  width: 420px;  
+  width: 420px;
+  margin-left: 20px;  
   /* Только для оформления сетки */
   min-height: 83px;
   outline:2px solid yellow;
@@ -54,8 +124,162 @@ body {
 .buyer-block {
   float: right;
   width: 100px;
+  margin-top: 27px;
   /* Только для оформления сетки */
   min-height: 83px;
+  outline:2px solid yellow;
+}
+
+.intro{
+  margin-bottom: 81px;
+  /* Только для оформления сетки */ 
+  outline:2px solid green;
+}
+
+.intro .container {
+  padding-top: 41px;
+}
+
+.slider {
+  width: 880px;
+  /* Только для оформления сетки */
+  min-height: 319px;
+  outline:2px solid yellow;
+}
+
+.slide {
+  display: none;
+}
+
+.slide.active {
+  display: block;
+}
+
+.benefits .container  {
+  width: 880px;
+  margin: 0 auto;
+  margin-bottom: 142px;
+  padding: 0 10px;
+  outline:2px solid red;
+}
+
+.benefit-item {
+  width: 240px;
+  float: left;
+  margin-right: 80px;
+  /* Только для оформления сетки */
+  min-height: 300px;
+  outline:2px solid yellow;
+}
+
+.benefit-item:last-child {
+margin-right: 0;
+}
+
+.about-us .container {
+  width: 880px;
+  margin: 0 auto;
+  margin-bottom: 119px;
+  padding: 0 10px;
+  outline:2px solid red;
+}
+
+.left-column {
+  float: left;
+  width: 571px;
+  margin-right: 40px;  
+  /* Только для оформления сетки */
+  min-height: 340px;
+  outline:2px solid yellow; 
+}
+
+.right-column {
+  float: right;
+  width: 240px;
+  /* Только для оформления сетки */
+  min-height: 340px;
+  outline:2px solid yellow;
+}
+
+.right-column:last-child {
+margin-right: 0;
+}
+
+.clients .container {
+  width: 870px;
+  margin: 0 auto;
+  margin-bottom: 119px;
+  padding-top:0;
+  padding-bottom:0;
+  padding-right: 10px;
+  padding-left:  20px;
+  outline:2px solid red;
+}
+
+.client-logo {
+  display: inline-block;  
+  width: 198px;  
+  margin-right: 118px; 
+  vertical-align: middle;
+  /* Только для оформления сетки */
+  min-height: 37px;
+  outline:2px solid yellow;  
+}
+
+.client-logo:nth-child {
+  float: left;
+  width: 199px;
+  margin-right: 122px;
+  min-height: 68px;
+}
+
+.client-logo:last-child {
+  width: 209px;
+  margin-right: 0;
+  min-height: 90px;
+}
+
+.map-wrapper {
+  /* Только для оформления сетки */
+  min-height: 416px;
+  outline:2px solid green;
+}
+
+.map-wrapper .container {
+  padding-top: 86px;
+  padding-bottom: 90px; 
+}
+
+.contacts {
+  width: 250px;
+  /* Только для оформления сетки */
+  min-height: 240px;
+  outline:2px solid yellow;
+}
+
+.main-footer {
+  padding-top: 78px;
+  /* Только для оформления сетки */
+  min-height: 215px;
+  outline:2px solid green;
+}
+
+.footer-social {
+  display: inline-block;
+  width: 240px;
+  margin-right: 80px;
+  vertical-align: middle;  
+  /* Только для оформления сетки */
+  min-height: 63px;
+  outline:2px solid yellow;
+}
+
+.footer-slogan {
+  display: inline-block;
+  width: 541px;
+  vertical-align: middle;  
+  /* Только для оформления сетки */
+  min-height: 63px;
   outline:2px solid yellow;
 }
 
