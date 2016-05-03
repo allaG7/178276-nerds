@@ -1,7 +1,7 @@
 
 html,
 body {
-  min-width: 1200px;
+  min-width: 920px;
   min-height: 2256px;
   margin: 0;
   padding: 0;
@@ -16,6 +16,7 @@ body {
 }
 
 .main-header { 
+  margin-bottom: 41px;
   /* Только для оформления сетки */
   outline:2px solid green;
 }
@@ -37,7 +38,7 @@ body {
 .container {
   width: 880px;
   margin: 0 auto;
-  padding: 0 10px;
+  padding: 0 20px;
   outline:2px solid red;
 }
 
@@ -103,10 +104,12 @@ body {
   outline:2px solid yellow;
 }
 
-.index-logo {
+.logo {
+  display: block;
   float: left;
   width: 140px;  
   margin-top: 27px;
+  text-decoration: none
   /* Только для оформления сетки */
   min-height: 83px;
   outline:2px solid yellow;
@@ -115,7 +118,7 @@ body {
 .main-navigation {
   float: left;
   width: 420px;
-  margin-left: 20px;  
+  margin-left: 180px;  
   /* Только для оформления сетки */
   min-height: 83px;
   outline:2px solid yellow;
@@ -136,37 +139,26 @@ body {
   outline:2px solid green;
 }
 
-.intro .container {
-  padding-top: 41px;
-}
-
 .slider {
-  width: 880px;
+  width: 880px;  
   /* Только для оформления сетки */
-  min-height: 319px;
   outline:2px solid yellow;
 }
 
 .slide {
   display: none;
+  height: 320px;
 }
 
 .slide.active {
   display: block;
 }
 
-.benefits .container  {
-  width: 880px;
-  margin: 0 auto;
-  margin-bottom: 142px;
-  padding: 0 10px;
-  outline:2px solid red;
-}
-
 .benefit-item {
   width: 240px;
   float: left;
   margin-right: 80px;
+  margin-bottom: 142px;
   /* Только для оформления сетки */
   min-height: 300px;
   outline:2px solid yellow;
@@ -176,18 +168,11 @@ body {
 margin-right: 0;
 }
 
-.about-us .container {
-  width: 880px;
-  margin: 0 auto;
-  margin-bottom: 119px;
-  padding: 0 10px;
-  outline:2px solid red;
-}
-
 .left-column {
   float: left;
   width: 571px;
-  margin-right: 40px;  
+  margin-right: 40px; 
+  margin-bottom: 119px; 
   /* Только для оформления сетки */
   min-height: 340px;
   outline:2px solid yellow; 
@@ -196,47 +181,59 @@ margin-right: 0;
 .right-column {
   float: right;
   width: 240px;
+  margin-bottom: 119px;
   /* Только для оформления сетки */
   min-height: 340px;
   outline:2px solid yellow;
 }
 
 .right-column:last-child {
-margin-right: 0;
+  margin-right: 0;
 }
 
-.clients .container {
-  width: 870px;
+.clients {
+  width: 1000px;
   margin: 0 auto;
   margin-bottom: 119px;
-  padding-top:0;
-  padding-bottom:0;
-  padding-right: 10px;
-  padding-left:  20px;
-  outline:2px solid red;
+  font-size: 0; 
+  text-align:center;
+  outline:2px solid yellow;
 }
 
 .client-logo {
   display: inline-block;  
-  width: 198px;  
-  margin-right: 118px; 
+  margin-left: 61px  
+  margin-right: 61px;
+  margin-bottom: 20px;
   vertical-align: middle;
   /* Только для оформления сетки */
-  min-height: 37px;
   outline:2px solid yellow;  
 }
 
-.client-logo:nth-child {
+.client-logo:nth-child(1) {
+  float: left;
+  width: 198px;
+  margin-left: 0;  
+  min-height: 37px;
+}
+
+.client-logo:nth-child(2) {
   float: left;
   width: 199px;
-  margin-right: 122px;
   min-height: 68px;
 }
 
-.client-logo:last-child {
+.client-logo:nth-child(3) {
+  float: left;
   width: 209px;
   margin-right: 0;
+  width: 199px;
   min-height: 90px;
+}
+
+.client-logo:nth-child(4) {
+  float: left;
+  margin-left: 0;  
 }
 
 .map-wrapper {
@@ -245,13 +242,11 @@ margin-right: 0;
   outline:2px solid green;
 }
 
-.map-wrapper .container {
-  padding-top: 86px;
-  padding-bottom: 90px; 
-}
-
 .contacts {
+  position: absolute;
   width: 250px;
+  margin-top: 70px;
+  margin-bottom: 80px;
   /* Только для оформления сетки */
   min-height: 240px;
   outline:2px solid yellow;
@@ -265,28 +260,38 @@ margin-right: 0;
 }
 
 .footer-social {
-  display: inline-block;
+  float: left;
   width: 240px;
   margin-right: 80px;
+  vertical-align: middle;
+  font-size: 0;  
+  /* Только для оформления сетки */
+  min-height: 63px;
+  outline:2px solid yellow;
+}
+.social-btn {
+display: inline-block;
+}
+
+.footer-slogan {
+  float: right;
+  width: 541px;
   vertical-align: middle;  
+  margin-right: 0;
   /* Только для оформления сетки */
   min-height: 63px;
   outline:2px solid yellow;
 }
 
-.footer-slogan {
-  display: inline-block;
-  width: 541px;
-  vertical-align: middle;  
-  /* Только для оформления сетки */
-  min-height: 63px;
-  outline:2px solid yellow;
+.modal {
+  display: none;
 }
 
 h1 {
   font-family:"Roboto";
   font-size:40px;
   font-weight:normal;
+  margin: 0;
   line-height:120%;
   color: #000000;
 }
@@ -295,6 +300,7 @@ h2 {
   font-family:"Roboto";
   font-size:36px;
   font-weight:normal;
+  margin: 0;
   line-height:40px;
   color: #000000;
 }
@@ -303,7 +309,19 @@ h3 {
   font-family: "Roboto";
   font-size:18px;
   font-weight:normal;
+  margin: 0;
   line-height:30px;
   color: #000000;
 }
+
+ul {
+list-style: none;
+margin: 0; 
+padding: 0;
+}
+
+p {
+  margin: 0;
+}
+
 
