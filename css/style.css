@@ -16,7 +16,7 @@ body {
 }
 
 .main-header { 
-  margin-bottom: 41px;
+  margin-bottom: 34px;
   /* Только для оформления сетки */
   outline:2px solid green;
 }
@@ -27,12 +27,20 @@ body {
   clear: both;  
 }
 
-.main-slogan .container {
-  width: 651px;
-  margin-top: 73px;
-  margin-bottom: 93px;
+.main-slogan {
+  outline:2px solid green;
+  min-height: 205px;
+}
+
+.main-slogan h1 {
+  padding-top: 41px; 
+  padding-bottom: 94px;
+  padding-right: 122px;
+  padding-left: 108px;
+  max-width: 650px;
   /* Только для оформления сетки */
-  min-height: 80px;
+  min-height: 77px;
+  outline:2px solid yellow; 
 }
 
 .container {
@@ -68,7 +76,6 @@ body {
 .item {
   display: inline-block;
   font-size: 16px;
-  margin-top: 30px;
   margin-right: 80px; 
   margin-bottom: 80px; 
   width: 240px;
@@ -83,24 +90,28 @@ body {
 .item-info {
   position: absolute;
   width: 200px;
+  min-height: 200px;
+  margin-top: 20px;
   margin-right: 20px;
   margin-left: 20px;
-  margin-bottom: 14px;
-  /* Только для оформления сетки */
-  min-height: 200px; 
+  margin-bottom: 20px;
 }
 
 .pagination {
   width: 285px;
+  font-size: 0;
   /* Только для оформления сетки */
-  min-height: 39px; 
   outline:2px solid yellow;
+}
+
+.btn {
+  display: inline-block;
+  font-size: 16px;
 }
 
 .final-filter {
   width: 560px;
   /* Только для оформления сетки */
-  min-height: 16px;
   outline:2px solid yellow;
 }
 
@@ -147,7 +158,7 @@ body {
 
 .slide {
   display: none;
-  height: 320px;
+  height: 318px;
 }
 
 .slide.active {
@@ -187,10 +198,6 @@ margin-right: 0;
   outline:2px solid yellow;
 }
 
-.right-column:last-child {
-  margin-right: 0;
-}
-
 .clients {
   width: 1000px;
   margin: 0 auto;
@@ -201,39 +208,28 @@ margin-right: 0;
 }
 
 .client-logo {
-  display: inline-block;  
-  margin-left: 61px  
+  display: inline-block; 
+  width: 200px; 
+  margin-left: 61px;  
   margin-right: 61px;
-  margin-bottom: 20px;
+  margin-top: 10px;
+  margin-bottom: 10px;
   vertical-align: middle;
   /* Только для оформления сетки */
   outline:2px solid yellow;  
 }
 
-.client-logo:nth-child(1) {
-  float: left;
-  width: 198px;
-  margin-left: 0;  
-  min-height: 37px;
+.client-logo:nth-child(3n) {
+  margin-right: 0;  
 }
 
-.client-logo:nth-child(2) {
-  float: left;
-  width: 199px;
-  min-height: 68px;
+.client-logo:nth-child(3n+1) {
+  margin-left: 0;
 }
 
-.client-logo:nth-child(3) {
-  float: left;
-  width: 209px;
-  margin-right: 0;
-  width: 199px;
-  min-height: 90px;
-}
-
-.client-logo:nth-child(4) {
-  float: left;
-  margin-left: 0;  
+.client-logo img {
+  display: block;
+  width: 100%;
 }
 
 .map-wrapper {
@@ -253,7 +249,6 @@ margin-right: 0;
 }
 
 .main-footer {
-  padding-top: 78px;
   /* Только для оформления сетки */
   min-height: 215px;
   outline:2px solid green;
@@ -263,20 +258,25 @@ margin-right: 0;
   float: left;
   width: 240px;
   margin-right: 80px;
+  margin-top: 78px;
+  margin-bottom: 74px;
   vertical-align: middle;
   font-size: 0;  
   /* Только для оформления сетки */
   min-height: 63px;
   outline:2px solid yellow;
 }
-.social-btn {
+
+.footer-social.social-btn {
 display: inline-block;
 }
 
 .footer-slogan {
   float: right;
   width: 541px;
-  vertical-align: middle;  
+  vertical-align: middle;
+  margin-top: 78px;
+  margin-bottom: 74px;  
   margin-right: 0;
   /* Только для оформления сетки */
   min-height: 63px;
