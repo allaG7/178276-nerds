@@ -2,6 +2,8 @@
 <html lang="ru">
 <head>  	
   <meta charset="utf-8">
+	<link href='https://fonts.googleapis.com/css?family=Roboto:500&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="css/normalize.css">
   <link href="css/style.css" rel="stylesheet">
   <title>HTML Academy: Нёрдс</title>
 </head>
@@ -9,7 +11,7 @@
   <header class="main-header">
     <div class="container clearfix">	    
       <a class="logo" href="index.html">
-        <img src="img/logo.png" width="150" height="62" alt="Нёрдс»">
+        <img src="img/logo.png" width="140" height="56" alt="Нёрдс»">
       </a>		    
       <nav class="main-navigation">
         <ul>            
@@ -28,51 +30,52 @@
         </ul>
       </nav>
       <div class="buyer-block">
-       <img src="img/basket.png" width="15" height="15" alt="Корзина">
-       <a class="cart" href="#">Корзина</a>
+       	<a class="cart" href="#"><span class="icon-basket"></span>Корзина</a>
      </div>
    </div>
  </header>
  <section class="main-slogan">
   <div class="container">
-    <h1>Добро пожаловать в магазин  готовых макетов</h1>
+    <h1>Добро пожаловать в магазин готовых макетов</h1>
   </div>
 </section>
 <main class="container clearfix">
  <div class="filters-column">				
-  <form class="order-form" action="https://echo.htmlacademy.ru" method="post">
-   <h2>СТОИМОСТЬ:</h2>
-   <div class="range-controls">
-    <div class="scale">
-     <div style="margin-left:50 px;width:50 px;" class="bar"></div>
-   </div>
-   <div class="toggle min-toggle"></div>
-   <div class="toggle max-toggle"></div>
- </div>
- <div class="price-controls">
-  от <input class="min-price" type="text" value="0">
-  до <input class="max-price" type="text" value="15 000">
-</div>      		   		
-<h2>Сетка:</h2>		   
-<input type="radio" name="item-grups" id="adaptive" checked>
-<label for="adaptive">Адаптивная</label>
-<input type="radio" name="item-grups" id="fixed">
-<label for="fixed">Фиксированная</label>
-<input type="radio" name="item-grups" id="elastic">
-<label for="elastic">Резиновая</label>
-<h2>ОСОБЕННОСТИ:</h2>  
-<input type="checkbox" name="features" id="features-field1" checked>
-<label for="features-field1">Слайдер</label>
-<input type="checkbox" name="features" id="features-field2">
-<label for="features-field2">Блок преимуществ</label>
-<input type="checkbox" name="features" id="features-field3" checked>
-<label for="features-field3">Новости</label>
-<input type="checkbox" name="features" id="features-field4">
-<label for="features-field4">Галерея</label>
-<input type="checkbox" name="features" id="features-field5">
-<label for="features-field5">Корзина</label>
-<button type="submit">Показать</button>
-</form>
+  <h2>СТОИМОСТЬ:</h2>
+  <form action="form.php" method="GET">
+      <div class="range-filter">
+        <div class="range-controls">
+          <div class="scale">
+            <div class="bar" style="margin-left: 0%; width: 60%"></div>
+          </div>
+          <div class="toggle toggle-min"></div>
+          <div class="toggle toggle-max"></div>
+        </div>
+        <div class="price-controls">
+          <label class="min-price">от <input name="min-price" type="text" value="0"></label>
+          <label class="max-price">до <input name="max-price" type="text" value="15000"></label>
+        </div>
+      </div> 		   		
+			<h2>СЕТКА:</h2>		   
+			<input type="radio" name="item-grups" id="adaptive" checked>
+			<label for="adaptive" class="radiobuttons">Адаптивная</label>
+			<input type="radio" name="item-grups" id="fixed">
+			<label for="fixed" class="radiobuttons">Фиксированная</label>
+			<input type="radio" name="item-grups" id="elastic">
+			<label for="elastic" class="radiobuttons">Резиновая</label>
+			<h2>ОСОБЕННОСТИ:</h2>  
+			<input type="checkbox" name="features" id="features-field1" checked>
+			<label for="features-field1">Слайдер</label>
+			<input type="checkbox" name="features" id="features-field2">
+			<label for="features-field2">Блок преимуществ</label>
+			<input type="checkbox" name="features" id="features-field3" checked>
+			<label for="features-field3">Новости</label>
+			<input type="checkbox" name="features" id="features-field4">
+			<label for="features-field4">Галерея</label>
+			<input type="checkbox" name="features" id="features-field5">
+			<label for="features-field5">Корзина</label>
+			<button type="submit">Показать</button>
+	</form>
 </div>
 <div class="items-column">
  <div class="final-filter">
@@ -87,25 +90,27 @@
   <li>
     <a href=#>ПО ФУНКЦИОНАЛУ</a>
   </li>
+	<li>
+		<div class="rang-buttons">
+		 <a class="btn final-filter-prev" href="#"><span class="icon-up-dir"></span></a>
+		 <a class="btn final-filter-next" href="#"><span class="icon-down-dir"></span></a>
+		</div>
+	</li>
 </ul>
-<div class="rang-buttons">
- <a class="btn final-filter-prev" href="#"></a>
- <a class="btn final-filter-next" href="#"></a>
-</div>
 </div>				  	
 <section class="items">	
-  <article class="item">				  		
-   <div class="item-info">
+<article class="item">
+	<div class="item-info">
     <h2><a href=#>AVIATOR</a></h2>
-    <p>Одностраничный макет с авторским дизайном</p>
+    <p>Одностраничный макет <br>с авторским дизайном</p>
     <a class="price" href="#">8000 Р.</a>
   </div>
-  <img src="img/aviator.jpg" width="240" height="240" alt="«AVIATOR»">
+	<img src="img/aviator.jpg" width="240" height="240" alt="«AVIATOR»">
 </article>
 <article class="item">				  		
  <div class="item-info">
   <h2><a href=#>Sunset</a></h2>
-  <p>Интернет-магазин с личным кабинетом</p>
+  <p>Интернет-магазин <br>с личным кабинетом</p>
   <a class="price" href="#">10000 Р.</a>
 </div>
 <img src="img/sunset.jpg" width="240" height="240" alt="«Sunset»">
@@ -113,15 +118,15 @@
 <article class="item">
  <div class="item-info">
   <h2><a href=#>FORTE</a></h2>
-  <p>Отличный макет для личного блога</p>
+  <p>Отличный макет<br> для личного блога</p>
   <a class="price" href="#">5000 Р.</a>
 </div>
 <img src="img/forte.jpg" width="240" height="240" alt="«FORTE»">
 </article>
 <article class="item">
  <div class="item-info">
-  <h2><a href=#>Modern Organic THAI</a></h2>
-  <p>Сайт для ресторана быстрого питания</p>
+  <h2><a href=#>Modern Organic<br> THAI</a></h2>
+  <p>Сайт для ресторана<br> быстрого питания</p>
   <a class="price" href="#">12000 Р.</a>
 </div>
 <img src="img/thai.jpg" width="240" height="240" alt="«Modern Organic THAI»">
@@ -129,7 +134,7 @@
 <article class="item">
  <div class="item-info">
   <h2><a href=#>AVENUE</a></h2>
-  <p>Макет для блога  о путешествиях</p>
+  <p>Макет для блога <br> о путешествиях</p>
   <a class="price" href="#">8000 Р.</a>
 </div>
 <img src="img/avenue.jpg" width="239" height="240" alt="«AVENUE»">
@@ -137,7 +142,7 @@
 <article class="item">
  <div class="item-info">
   <h2><a href=#>DOVETAIL</a></h2>
-  <p>Интернет-магазин с галереей товаров</p>
+  <p>Интернет-магазин<br> с галереей товаров</p>
   <a class="price" href="#">14000 Р.</a>
 </div>
 <img src="img/dovetail.jpg" width="239" height="240" alt="«DOVETAIL»">
@@ -154,7 +159,7 @@
 <section class="map-wrapper">
  <div class="container">
   <div class="contacts">
-    <h2>NЁRDS DESIGN STUDIO</h2>
+    <h1>NЁRDS DESIGN STUDIO</h1>
     <p>191186, Санкт-Петербург,<br>
      ул. Б. Конюшенная, д. 19/8
    </p>
@@ -167,9 +172,9 @@
 <footer class="main-footer">
   <div class="container clearfix">
     <section class="footer-social">
-     <a class="social-btn social-btn-vk" href="#">Вконтакте</a>
-     <a class="social-btn social-btn-fb" href="#">Фейсбук</a>
-     <a class="social-btn social-btn-inst" href="#">Инстаграм</a>
+     <a class="social-btn" href="#"><span class="icon-vk"></span>Вконтакте</a>
+     <a class="social-btn" href="#"><span class="icon-facebook"></span>Фейсбук</a>
+     <a class="social-btn" href="#"><span class="icon-instagramm"></span>Инстаграм</a>
    </section>
    <section class="footer-slogan">
      <h2>Давайте дружить, это выгодно!</h2>
