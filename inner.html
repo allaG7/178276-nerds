@@ -41,8 +41,8 @@
 </section>
 <main class="container clearfix">
  <div class="filters-column">				
-  <h2>СТОИМОСТЬ:</h2>
-  <form action="form.php" method="GET">
+  	<h2>СТОИМОСТЬ:</h2>
+  	<form action="form.php" method="GET">
       <div class="range-filter">
         <div class="range-controls">
           <div class="scale">
@@ -55,28 +55,32 @@
           <label class="min-price">от <input name="min-price" type="text" value="0"></label>
           <label class="max-price">до <input name="max-price" type="text" value="15000"></label>
         </div>
-      </div> 		   		
-			<h2>СЕТКА:</h2>		   
-			<input type="radio" name="item-grups" id="adaptive" checked>
-			<label for="adaptive" class="radiobuttons">Адаптивная</label>
-			<input type="radio" name="item-grups" id="fixed">
-			<label for="fixed" class="radiobuttons">Фиксированная</label>
-			<input type="radio" name="item-grups" id="elastic">
-			<label for="elastic" class="radiobuttons">Резиновая</label>
-			<h2>ОСОБЕННОСТИ:</h2>  
-			<input type="checkbox" name="features" id="features-field1" checked>
-			<label for="features-field1">Слайдер</label>
-			<input type="checkbox" name="features" id="features-field2">
-			<label for="features-field2">Блок преимуществ</label>
-			<input type="checkbox" name="features" id="features-field3" checked>
-			<label for="features-field3">Новости</label>
-			<input type="checkbox" name="features" id="features-field4">
-			<label for="features-field4">Галерея</label>
-			<input type="checkbox" name="features" id="features-field5">
-			<label for="features-field5">Корзина</label>
-			<button type="submit">Показать</button>
-	</form>
-</div>
+      </div>
+			<div class="second-groupp">	
+			  <h2>СЕТКА:</h2>						   
+				<input type="radio" name="item-grups" id="adaptive" checked>
+				<label for="adaptive">Адаптивная</label>
+				<input type="radio" name="item-grups" id="fixed">
+				<label for="fixed">Фиксированная</label>
+				<input type="radio" name="item-grups" id="elastic">
+				<label for="elastic" class="radiobuttons">Резиновая</label>
+			</div>
+			<div class="third-groupp">	
+				<h2>ОСОБЕННОСТИ:</h2>  
+				<input type="checkbox" name="features" id="features-field1" checked>
+				<label for="features-field1">Слайдер</label>
+				<input type="checkbox" name="features" id="features-field2">
+				<label for="features-field2">Блок преимуществ</label>
+				<input type="checkbox" name="features" id="features-field3" checked>
+				<label for="features-field3">Новости</label>
+				<input type="checkbox" name="features" id="features-field4">
+				<label for="features-field4">Галерея</label>
+				<input type="checkbox" name="features" id="features-field5">
+				<label for="features-field5">Корзина</label>
+				<button type="submit" class="show-btn">Показать</button>
+			</div>
+		</form>		
+	</div>
 <div class="items-column">
  <div class="final-filter">
   <span>СОРТИРОВАТЬ:</span>
@@ -184,6 +188,9 @@
  </div>
 </footer>
 <div class="modal">
+	<div class="modal-content">
+	<button class="modal-content-close" type="button" title="Закрыть">+</button>
+ </div>
  <form class="write-us-form" action="https://echo.htmlacademy.ru" method="post">
   <div class="field-wrapper">
    <label for="username" class="field-label">Ваше имя:</label>

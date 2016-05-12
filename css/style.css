@@ -80,9 +80,9 @@ body {
 
 .main-slogan h1 {
   margin: 0 auto;
-  padding-top: 40px; 
-  padding-bottom: 94px;
-  max-width: 655px;
+  padding-top: 31px; 
+  padding-bottom: 85px;
+	max-width: 655px;
 	font-size: 40px;
 	text-transform: uppercase;
 	text-align: center;
@@ -102,6 +102,7 @@ body {
   float: left;
   width: 240px;
   margin-right: 40px;
+	margin-top: 70px;
   /* Только для оформления сетки */
   min-height: 727px; 
   outline:2px solid yellow; 
@@ -110,6 +111,7 @@ body {
 .items-column {
   float: right;
   width: 560px;
+	margin-top: 78px;
   /* Только для оформления сетки */
   min-height: 1125px;
   outline:2px solid yellow;
@@ -117,6 +119,7 @@ body {
 
 .items {
   width: 560px;
+	margin-top: 21px;
   font-size: 0;
   outline:2px solid yellow;  
 }
@@ -126,7 +129,7 @@ body {
   display: inline-block;
   font-size: 16px;
   margin-right: 80px; 
-  margin-bottom: 80px; 
+  margin-bottom: 47px; 
   width: 240px;
 	border-top: 30px solid #f1f1f1;
 	border-radius: 5px;	
@@ -360,41 +363,58 @@ font-size: 18px;
   background: #f1f1f1;
 }
 
+.second-groupp {
+	margin-bottom: 49px;
+}
 
 input[type="radio"] {
   display: none;
 }
 
-.radiobuttons {
+input[type="radio"] +label {
   display: block;
 	margin: 10px 0;
 	line-height: 20px;
 	padding-left: 45px;
 	position: relative;
 	cursor: pointer;
+	
 }
 
-input[type="radio"] +lable::before {
+input[type="radio"] +label::before {
 	content: "\25cb";
 	position: absolute;
 	top:0;
 	left: 0;
 	width: 10px;
 	height: 10px;
-	background: #000:
-	font-size: 24px;
+	font-size: 28px;
 	font-family: "symbols-nerds";
+	color: #c1c1c1;
 }
 
-.radiobuttons input[type="radio"]:chacked +lable::before {
-	content: "\25cf";
+input[type="radio"]:checked +label::before {
+	content: "\25cf";	
+}
+
+
+input:hover:checked +label::before {
+	color: #b5b5b5;	
+}
+
+input:active:checked +label::before {
+	color: #b5b5b5;	
+}
+
+input:disabled:checked +label::before {
+	color: #e9e9e9;	
 }
 
 input[type="checkbox"] {
   display: none;
 }
 
-input[type="checkbox"] +lable {
+input[type="checkbox"] +label {
   display: block;
 	margin: 10px 0;
 	line-height: 20px;
@@ -403,7 +423,7 @@ input[type="checkbox"] +lable {
 	cursor: pointer;
 }
 
-input[type="checkbox"] +lable::before {
+input[type="checkbox"] +label::before {
 	content: "\2610";
 	position: absolute;
 	top:0;
@@ -411,22 +431,57 @@ input[type="checkbox"] +lable::before {
 	width: 10px;
 	height: 10px;
 	background: #000:
-	font-size: 24px;
+	font-size: 28px;
 	font-family: "symbols-nerds";
+	color: #c1c1c1;
 }
 
-input[type="checkbox"]:chacked +lable::before {
+input[type="checkbox"]:checked +label::before {
 	content: "\2611";
 }
 
+.show-btn {
+	display: inline-block;
+	width: 156px; 
+	margin-top: 58px;
+	background: #f1f1f1;
+	font-size: 12px;
+	text-transform: uppercase;
+	border: 0;
+	outline: 0;
+	padding: 10px;
+}
+ 
+.show-btn:hover {
+	background:#e5e5e5;
+}
 
+.show-btn:active {
+	background: #d5d5d5;
+	border-top:3px solid #b5b5b5;
+}
 
+.pagination .pagination-next {
+	margin: 0;
+	min-width: 142px;
+	
+}
 
+.pagination .btn:hover {
+	background: #e5e5e5;
+}
 
+.pagination .btn:disabled {
+	width: 32px; 
+	height: 32px;
+	background: #ffffff;
+	border:3px solid #f2f2f2;
+}
 
-
-
-
+.pagination .btn:active {
+	background: #d5d5d5;
+	border-top:3px solid #b5b5b5;
+}
 .logo {
   display: block;
   float: left;
@@ -772,12 +827,14 @@ margin-bottom: 25px;
 .final-filter li a {
 	color: #c1c1c1;
 	text-decoration: none;
-	
+	border-bottom: 2px dotted #00ca74;
+		
 }
 
 .final-filter li a:hover {
 	color: #000000;
 	text-decoration: none;
+	border-bottom: 2px solid #00ca74;
 	
 }
 
@@ -956,8 +1013,9 @@ margin-bottom: 25px;
 .contacts h1 {
 	font-size: 16px;
 	text-transform:uppercase;
+	margin-left: 20px;
 	margin-top: 24px;
-	margin-left: 21px;
+	
 }
 
 .contacts p {
@@ -999,10 +1057,8 @@ margin-bottom: 25px;
 }
 
 .footer-social {	
-	width: 240px;
-	margin-right: 80px;
-  padding-top: 78px;
-  padding-bottom: 74px;
+	width: 240px;	
+	margin-right: 80px;  
 	vertical-align: bottom;
 	text-align: center;
 	/* Только для оформления сетки */
@@ -1017,7 +1073,7 @@ margin-bottom: 25px;
 	font-size: 0;
 	border-radius: 50%;
 	background: #e1e1e1;
-	text-align: center;
+	text-align: center;	
 }
 
 .social-btn:nth-child(1) {
@@ -1158,8 +1214,12 @@ margin-bottom: 25px;
 	
 }
 
-.write-us-for input:focus {
+.write-us-for input:hover {
   border-color: #a2a9ac;
+}
+
+.write-us-for input:focus {
+  border-color: #56bffb;
 }
 
 
