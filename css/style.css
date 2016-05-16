@@ -2,7 +2,6 @@
 html,
 body {
   min-width: 920px;
-  min-height: 2256px;
   margin: 0;
   padding: 0;
 }
@@ -214,7 +213,7 @@ p {
 	background: #ffffff;
 	box-sizing: border-box;
 	padding-top: 33px;
-	padding-bottom: 20px;
+	padding-bottom: 60px;
 	padding-left: 20px;
 	padding-right: 20px;
 	text-align: center; 
@@ -935,7 +934,7 @@ p span {
 }
 
 .final-filter li:last-child {
-	margin-left: 91px;
+	margin-left: 95px;
 	padding-top: 0;
 	vertical-align: 0;
 	border-bottom: 0;
@@ -946,6 +945,7 @@ p span {
 	text-decoration: none;
 	border-bottom: 1px dotted #00ca74;
 }
+
 
 .final-filter li a:hover {
 	color: #000000;
@@ -971,15 +971,14 @@ p span {
 	border-bottom: 0;
 }
 
-.final-filter.rang-buttons  {
-	margin-left: 102px;
-	font-size: 23px;
+.final-filter .rang-buttons span {
+	font-size: 20px;
 	line-height: 20px;
 	color: #c1c1c1;
 	border-bottom: 0;
 }
 
-.rang-buttons span.active {
+.final-filter .rang-buttons span.active {
 	color: #00ca74;	
 	border: 0;
 }
@@ -988,10 +987,13 @@ p span {
 	color: #00ca74;	
 	border: 0;
 }
+.final-filter li <.rang-buttons  {
+	border-bottom: 0;
+}
 
 .icon-up-dir::before, 
 .icon-down-dir::before {
-	font-size: 23px;
+	font-size: 20px;
 	display: table-row;
 	margin: 0;
 }
@@ -1081,7 +1083,7 @@ p span {
 .clients {
   margin: 0 auto;
 	margin-top: 35px;
-	margin-bottom: 85px;
+	margin-bottom: 110px;
   font-size: 0; 
   text-align:center;
 }
