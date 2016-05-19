@@ -920,6 +920,7 @@ p span {
 	margin: 0;
 	padding: 0;
 	list-style: none;
+	margin-bottom: 15px;
 }
 
 .final-filter li {
@@ -931,13 +932,6 @@ p span {
 	margin-left: 42px;
 	padding-top: 4px;
 	vertical-align: top;	
-}
-
-.final-filter li:last-child {
-	margin-left: 95px;
-	padding-top: 0;
-	vertical-align: 0;
-	border-bottom: 0;
 }
 
 .final-filter li a {
@@ -971,14 +965,35 @@ p span {
 	border-bottom: 0;
 }
 
-.final-filter .rang-buttons span {
-	font-size: 20px;
-	line-height: 20px;
-	color: #c1c1c1;
-	border-bottom: 0;
+.filter-menu {
+	width: 460px;
+	float: left;
 }
 
-.final-filter .rang-buttons span.active {
+.rang-buttons{
+	width: 25px;
+	float: right;
+}
+
+.rang-buttons span {
+	display: inline-block;
+	font-size: 20px;
+	line-height: 20px;
+	vertical-align: top;
+	text-align: right;
+	color: #c1c1c1;
+	border-top: 0;
+}
+
+.rang-buttons span:hover {
+	color: #b5b5b5;
+}
+
+.rang-buttons span:active {
+	color: #000000;
+}
+
+.rang-buttons span.active {
 	color: #00ca74;	
 	border: 0;
 }
@@ -986,9 +1001,6 @@ p span {
 .rang-buttons span.active:hover {
 	color: #00ca74;	
 	border: 0;
-}
-.final-filter li <.rang-buttons  {
-	border-bottom: 0;
 }
 
 .icon-up-dir::before, 
