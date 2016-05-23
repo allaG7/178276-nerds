@@ -104,18 +104,18 @@
 				<p class="our-discription">Исповедуем принципы минимализма и чистоты.  Ставим математический расчет выше креатива. Работаем не покладая рук, как роботы.</p>
 				<h3>Выполняем заказы на разработку:</h3>
 				<ul>
-					<li class="line">Веб-сайтов любой сложности</li>
-					<li class="line">Мобильных приложений для iOS и Android</li>
-					<li class="line">Слайдшоу и видео для корпоративных презентаций</li>
+					<li>Веб-сайтов любой сложности</li>
+					<li>Мобильных приложений для iOS и Android</li>
+					<li>Слайдшоу и видео для корпоративных презентаций</li>
 				</ul>
 			</div>
 			<div class="right-column">
 				<img src="img/logo2.png" width="240" height="119" alt="«Нёрдс2»">
 				<h3>Как мы работаем:</h3>
 				<ul>
-					<li><div class="line"></div>С самоотдачей 146%</li>
-					<li><div class="line"></div>Соблюдая сроки на 100%</li>
-					<li><div class="line"></div>По предоплате 50%</li>
+					<li>С самоотдачей 146%</li>
+					<li>Соблюдая сроки на 100%</li>
+					<li>По предоплате 50%</li>
 				</ul>
 			</div>
 		</div>
@@ -171,6 +171,53 @@
 			<textarea name="message" id="message" rows="6" placeholder="">В свободной форме</textarea>
 			<button class="btn btn-send">ОТПРАВИТЬ</button>
 		</form>
-	</div>      
+	</div>
+	<script>
+      var link = document.querySelector(".btn");
+
+      var popup = document.querySelector(".modal-content");
+		
+		  var close = popup.querySelector(".modal-content-close");
+		
+		  var form = popup.querySelector("form");		
+			var username = popup.querySelector("#username");
+		
+			var storage = localStorage.getItem("username");
+
+      link.addEventListener("click", function(event) {
+        event.preventDefault();
+				popup.classList.add("modal-content-show");
+				
+			  if (storage) {
+          username.value = storage;
+        } else {
+					username.focus();
+				}
+					
+      });
+				
+      close.addEventListener("click", function(event) {
+      event.preventDefault();
+      popup.classList.remove("modal-content-show");
+      });
+			form.addEventListener("submit", function(event) {
+       			
+				if (!username.value || !email.value || !message.value) {
+        event.preventDefault();
+        console.log("Нужно ввести имя пользователя, имейл и текст сообщения"); 
+					
+			  } else {
+          localStorage.setItem("username", username.value);
+        }		
+			});
+		
+		 	window.addEventListener("keydown", function(event) {
+				if (event.keyCode === 27) {
+					if (popup.classList.contains("modal-content-show")) {
+						popup.classList.remove("modal-content-show");
+					}
+				}
+			});
+    </script>
 </body>
 </html>

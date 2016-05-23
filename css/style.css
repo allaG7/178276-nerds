@@ -1,9 +1,9 @@
 
 html,
 body {
-		min-width: 920px;
-		margin: 0;
-		padding: 0;
+	min-width: 920px;
+	margin: 0;
+	padding: 0;
 }
 
 body {   
@@ -1272,6 +1272,10 @@ p span {
 		background: #ffffff;
 		border-top: 3px solid #00994b;
 		box-shadow: 0 20px 40px rgba(0,1,1,.75);
+}
+
+.modal-content-show {
+  display: block;
 }
 
 .modal-content-close {
