@@ -56,7 +56,7 @@
 						<label class="max-price">до <input name="max-price" type="text" value="15000"></label>
 					</div>
 				</div>
-				<div class="second-groupp">	
+				<div class="second-group">	
 					<h2>СЕТКА:</h2>						   
 					<input type="radio" name="item-grups" id="adaptive" checked>
 					<label for="adaptive">Адаптивная</label>
@@ -65,7 +65,7 @@
 					<input type="radio" name="item-grups" id="elastic">
 					<label for="elastic" class="radiobuttons">Резиновая</label>
 				</div>
-				<div class="third-groupp">	
+				<div class="third-group">	
 					<h2>ОСОБЕННОСТИ:</h2>  
 					<input type="checkbox" name="features" id="features-field1" checked>
 					<label for="features-field1">Слайдер</label>
@@ -190,21 +190,21 @@
 	</footer>
 	<div class="modal">
 		<div class="modal-content">
-			<button class="modal-content-close" type="button" title="Закрыть">+</button>
-	  </div>
-		<form class="write-us-form" action="https://echo.htmlacademy.ru" method="post">
-			<div class="field-wrapper">
-				<label for="username" class="field-label"><p>Ваше имя:</p></label>
-				<input type="text" id="username" class="field" placeholder="Представьтесь, пожалуйста">
-			</div>
-			<div class="field-wrapper">
-				<label for="email" class="field-label"><p>Ваш e-mail:</p></label>
-				<input type="text" id="email" class="field" placeholder="Для отправки ответа">
-			</div>
-			<label for="message" class="field-label"><p>Текст письма:</p></label>
-			<textarea name="message" id="message" rows="6" placeholder="">В свободной форме</textarea>
-			<button class="btn btn-send">ОТПРАВИТЬ</button>
-		</form>
+			<button class="modal-content-close" type="button" title="Закрыть">+</button>	 
+			<form class="write-us-form" action="https://echo.htmlacademy.ru" method="post">
+				<div class="field-wrapper">
+					<label for="username" class="field-label"><p>Ваше имя:</p></label>
+					<input type="text" id="username" class="field" placeholder="Представьтесь, пожалуйста">
+				</div>
+				<div class="field-wrapper">
+					<label for="email" class="field-label"><p>Ваш e-mail:</p></label>
+					<input type="text" id="email" class="field" placeholder="Для отправки ответа">
+				</div>
+				<label for="message" class="field-label"><p>Текст письма:</p></label>
+				<textarea name="message" id="message" rows="6" placeholder="В свободной форме"></textarea>
+				<button class="btn btn-send">ОТПРАВИТЬ</button>
+			</form>			 
+		</div>
 	</div>
 	<script>
     var link = document.querySelector(".open-modal");
