@@ -1373,10 +1373,12 @@ p span {
 
 .write-us-for input:hover {
 	border-color: #a2a9ac;
+	
 }
 
 .write-us-for input:focus {
 	border-color: #56bffb;
+	background: #ffffff;
 }
 
 .write-us-form textarea[name="message"] {
@@ -1397,6 +1399,10 @@ p span {
 	display: block;
 	width: 220px;
 	font-size: 16px;	
+}
+
+.field-label:hover {
+	list-style: 0;
 }
 
 .write-us-form .btn {
